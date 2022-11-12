@@ -31,15 +31,26 @@ header img{
 }
 
 .menu-nav{
+    
     margin-right: 30px;
     font-size: 24px;
     display: flex;
     gap: 30px;
+    
 
 }
 
 .menu-nav a{
+    font-weight: bold;
     color: #3716C6;
+}
+
+.menu-nav a:hover, .menu-nav span{
+    font-weight: bold;
+    color: #fff;
+    background-color: #3716C6;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 main{
@@ -49,8 +60,33 @@ main{
 
 main div{
     padding: 10px;
-    height: 100px;
     background-color: white;
     border-radius: 6px;
 
+}
+
+
+
+
+/*WISHLIST*/
+
+table{
+    row-gap: 10px;
+}
+
+tr th:first-child{
+    padding: 2px 250px 2px 2px;
+}
+
+tr td:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 500px 10px 10px;
+
+    background: #3716C6;
+}
+
+tr td{
+    padding: 10px 70px 10px 10px;
+    background: #3716C6;
 }
