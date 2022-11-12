@@ -13,7 +13,7 @@ body{
 
 ul{
     list-style: none;
-
+    padding-top: 20px;
 }
 
 header{
@@ -23,6 +23,7 @@ header{
     justify-content: space-between;
     background-color: #fff;
     margin-bottom: 20px;
+    block-size: auto;
     
 }
 
@@ -32,7 +33,7 @@ header img{
 
 .menu-nav{
     
-    margin-right: 30px;
+    margin-right: 12cm;
     font-size: 24px;
     display: flex;
     gap: 30px;
@@ -43,6 +44,7 @@ header img{
 .menu-nav a{
     font-weight: bold;
     color: #3716C6;
+    text-decoration: none;
 }
 
 .menu-nav a:hover, .menu-nav span{
@@ -53,19 +55,49 @@ header img{
     border-radius: 3px;
 }
 
+li {
+
+font-size: 27px;
+
+}
+
+
+ul li:nth-child(1) {
+
+margin-right: 40px;
+
+}
+
+ul li:nth-child(2) {
+
+margin-right: 40px;
+
+}
+
+ul li:nth-child(3) {
+
+margin-left: 30px;
+
+}
+
+ul li:nth-child(4) {
+
+margin-left: 40px;
+
+}
+
+
 main{
     max-width: 1098px;
     margin: auto;
 }
 
-main div{
+main{
     padding: 10px;
-    background-color: white;
+    background-color: rgb(242, 242, 242);
     border-radius: 6px;
-
+    height: 30cm;
 }
-
-
 
 
 /*WISHLIST*/
