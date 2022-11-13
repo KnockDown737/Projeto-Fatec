@@ -237,6 +237,38 @@ text-align: justify;
 
 }
 
+/* FALE CONOSCO */
+
+.contato {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 20px;
+
+}
+
+.formulario {
+    margin: 40px ;
+    color: #3716C6;
+ }
+
+.entry-label {
+    display: block;
+    margin: 8px auto;
+    width: 80%;
+}
+
+.entry, .formulario textarea {
+    display: block;
+    margin: 0 auto 25px;
+    padding: 4px 9px;
+    font-size: 18px;
+    width: 80%;
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
+}
+
+
 /*aqui tinha dado interferencia com a lista (itens) da navbar*/
 
 /*tentei fazer uma gambi*/

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="style/main.css">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet"> 
-    <title>Sobre</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <title>Fale Conosco</title>
 </head>
+
 <body>
     <header>
         <img src="./imgs/logo.svg" alt="Logo">
@@ -24,12 +26,26 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <span>DIV MAIN</span>
-        </div>
-        
+    <main class="contato">
+        <form class="formulario">
+            <label class="entry-label" for="name">Nome</label>
+            <input class="entry" type="text" name="" id="name" required>
+
+            <label class="entry-label" for="email">Email</label>
+            <input class="entry" type="email" name="" id="email" required>
+
+            <label class="entry-label" for="phone">Telefone para contato</label>
+            <input class="entry" type="tel" name="" id="phone" required>
+
+            <label class="entry-label" for="message">Deixe aqui sua mensagem</label>
+            <textarea class="entry" name="" id="message" cols="30" rows="10"></textarea>
+
+            <label for="check-mailing" class="entry-label" id="checkbox">Gostaria de receber nossas novidades por email?
+                <input type="checkbox" name="" id="check-mailing"></label>
+
+            <input class="entry" type="submit" value="Enviar formulário">
     </main>
 
 </body>
+
 </html>
