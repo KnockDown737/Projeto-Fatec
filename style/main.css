@@ -107,7 +107,7 @@ main{
     padding: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 6px;
-    height: 30cm;
+    height: 45cm;
 }
 
 
@@ -122,6 +122,7 @@ main{
     align-content: center;
     width: 41%;  /* movimentou o card pra esqquerda*/
     height: 27vh;
+    padding-top: 28%; /*movimenta ele pra cima*/
 }
 
 .card {
@@ -129,6 +130,7 @@ main{
     background: #fff;
     box-shadow: 0px 2px 18px #2639535a;
     border-radius: 20px;
+    padding-top: 10px;
 
 }
 
