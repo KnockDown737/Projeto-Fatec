@@ -29,12 +29,49 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <span>DIV MAIN</span>
-        </div>
+    <main id="mainReview">
+        <!-- 
+            Foi usado implementação por JS
+
+            <div class="content-reviews">
+            <div class="nota">5</div>
+            <img src="./imgs/7.jpg" alt="teste">
+            <div class="nome-jogo">
+                <h2>Grounded</h2>
+                <span>Sobrevivencia</span>
+            </div>
+            <p class="text-review">
+                O mundo é um lugar vasto, bonito e perigoso - especialmente quando você está do tamanho de uma formiga. Explore, construa e sobreviva juntos nesta aventura de sobrevivência e cooperação. Você consegue sobreviver ao lado das hordas de insetos gigantes, lutando para sobreviver aos perigos do quintal?
+            </p>
+            <button class="btn btn-primary" type="button">
+                Review <span class="badge"> 4 </span>
+            </button>
+        </div> -->
         
     </main>
+    <script src="./js/reviews.js"></script>
+    <script>
+        //image,textImg,titleGames,genreGames,textReview
+        document.querySelector("#mainReview").innerHTML =
+        createReview(
+            '7.jpg',
+            'Grounded',
+            'Grounded',
+            'Sobrevivencia, Aventura',
+            'O mundo é um lugar vasto, bonito e perigoso - especialmente quando você está do tamanho de uma formiga. Explore, construa e sobreviva juntos nesta aventura de sobrevivência e cooperação. Você consegue sobreviver ao lado das hordas de insetos gigantes, lutando para sobreviver aos perigos do quintal?'
+
+        )
+        +createReview(
+            '7.jpg',
+            'Grounded',
+            'Grounded',
+            'Sobrevivencia, Aventura',
+            'O mundo é um lugar vasto, bonito e perigoso - especialmente quando você está do tamanho de uma formiga. Explore, construa e sobreviva juntos nesta aventura de sobrevivência e cooperação. Você consegue sobreviver ao lado das hordas de insetos gigantes, lutando para sobreviver aos perigos do quintal?'
+
+        );
+
+
+    </script>
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+/*CSS DE USO GERAL DO HTML*/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,35 +15,32 @@ body{
 
 ul{
     list-style: none;
-    padding-top: 20px;
 }
 
 header{
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #fff;
     margin-bottom: 20px;
-    block-size: auto;
-    
 }
 
-header img{
-    padding: 13px;
-}
-
-
-
+header nav{
+    display: flex;
+    align-items: center;
+  }
 
 .menu-nav{
-    
-    margin-right: 7cm;     /* pra mexer em todos os itens do nav*/
-    font-size: 24px;
     display: flex;
     gap: 30px;
-    
+    align-items: center;
+} 
 
+.menu-nav dl, ol, ul {
+    /*ITENS COMENTADOS AQUI SÃO O PROBLEMA DE ALINHAMENTO DO NAV, margin: auto É NECESSÁRIO PARA AJUSTE*/
+    /* margin-top: 0; */
+    /* margin-bottom: 1rem; */ 
+    margin: auto;
 }
 
 .menu-nav a{
@@ -56,194 +55,159 @@ header img{
     background-color: #3716C6;
     border-radius: 3px;
     transition: .2s;
-    
-    
 }
 
-li {
-
-font-size: 27px;
-
+.menu-nav li {
+    font-size: 20px;
 }
-
-/*mexer nos itens do nav um por um*/
-
-ul li:nth-child(1) {
-
-margin-right: 40px;
-
-}
-
-ul li:nth-child(2) {
-
-margin-right: 30px;
-
-}
-
-ul li:nth-child(3) {
-
-margin-left: 30px;
-
-}
-
-ul li:nth-child(4) {
-
-margin-left: 40px;
-
-}
-
-ul li:nth-child(5) {
-
-    margin-left: 40px;
-    
-    }
 
 main{
-    max-width: 1098px;
+    width: 1080px;
     margin: auto;
-}
-
-main{
     padding: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 6px;
-    height: 45cm;
+    height: auto;
 }
 
 
 
-/* HOME- CARDS*/
+
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/* CSS HOME*/
 
 .content {
-
     display:flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     width: 41%;  /* movimentou o card pra esqquerda*/
-    height: 27vh;
     padding-top: 28%; /*movimenta ele pra cima*/
 }
 
 .card {
-
     background: #fff;
     box-shadow: 0px 2px 18px #2639535a;
     border-radius: 20px;
     padding-top: 10px;
-
 }
 
 .mediaCard {
-
-background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGAVnHnLd3oWgeJSAwKhBXauXgqOl1-_c6A&usqp=CAU) center/cover;
-height: 300px;
-width: 10cm;
-
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGAVnHnLd3oWgeJSAwKhBXauXgqOl1-_c6A&usqp=CAU) center/cover;
+    height: 300px;
+    width: 10cm;
 }
 
 .topCard {
-
     padding: 20px;
 }
 
 .bottomCard {
-
     padding: 20px;
-
 }
 
 
 
 
 
-/*WISHLIST*/
 
-table{
-    row-gap: 10px;
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS WISHLIST*/
+
+#wishlist{
+    border-collapse: separate;
 }
 
-tr th:first-child{
+#wishlist tr th:first-child{
     padding: 2px 250px 2px 2px;
 }
 
-tr td:first-child{
+#wishlist tr td:first-child{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 10px 500px 10px 10px;
-
     background: #3716C6;
 }
 
-tr td{
+#wishlist tr td:last-child{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#wishlist tr td{
     padding: 10px 70px 10px 10px;
     background: #3716C6;
 }
 
-/*SOBRE*/
+
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS SOBRE*/
 
 b {
     color: #3716C6;
-
 }
 
-
 #fundoIdiota{   /*tive que dar um migué no fundo branco*/
-
     padding: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 6px;
     height: 43cm;   
-
 }
 
-
-
-
 #gwgImage{
-
-padding-top: 4%;
-padding-left: 6%;
-
+    padding-top: 4%;
+    padding-left: 6%;
 }
 
 #Titulo {
-
-color: #3716C6;
-padding-left: 14%;
-padding-top: 19px;
-font-size: 38px;
-
-
-
+    color: #3716C6;
+    padding-left: 14%;
+    padding-top: 19px;
+    font-size: 38px;
 }
-
 
 .Titulos {
-
-color: #3716C6;
-font-size: 33px;
-padding-top: 3%;
+    color: #3716C6;
+    font-size: 33px;
+    padding-top: 3%;
 }
-
-
-
 
 .paragrafo {
-
-padding-top: 3%;
-font-size: 23px;
-text-align: justify;
-
+    padding-top: 3%;
+    font-size: 23px;
+    text-align: justify;
 }
 
-/* FALE CONOSCO */
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS FALE CONOSCO */
 
 .contato {
-    width: 1098px;
+    max-width: 1080px;
     margin: 0 auto;
     font-size: 25px;
-
 }
 
 .formulario {
@@ -268,36 +232,94 @@ text-align: justify;
     overflow: auto;
 }
 
-
 /*aqui tinha dado interferencia com a lista (itens) da navbar*/
-
 /*tentei fazer uma gambi*/
-
-.lista li:nth-child(3) {
-
+/* .lista li:nth-child(3) {
     margin-left: 40px;
-
-
 }
 
 .lista li:nth-child(4) {
-
     margin-left: 40px;
-
-
 }
 
 .lista li:nth-child(5) {
-
     margin-left: 40px;
-
-
-}
+} */
 
 .lista li{
+    list-style: square;
+    margin-left: 40px;
+    color: #3716C6;
+}
 
-list-style: square;
-margin-left: 40px;
-color: #3716C6;
 
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS REVIEWS*/
+
+#mainReview{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content-reviews{
+    background:#3716C6;
+    display: flex;
+    padding: 30px;
+    border-radius: 6px;
+    gap: 3%;
+}
+
+.nota{
+    display: flex;
+    background: #fff;
+    padding: 1%;
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 6px;
+    font-size: 24px;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-reviews img{
+    width: auto;
+    max-height: 250px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.nome-jogo{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-jogo h2{
+    color: #fff;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 3px ;
+    margin-bottom: auto;
+}
+
+.nome-jogo span{
+    color: aliceblue;
+}
+
+.text-review{
+    color:rgb(242, 242, 242);
+    padding: 1%;
+    font-size: 18px;
+}
+
+.btn{
+    margin-top: auto;
+    max-height: auto;
 }
