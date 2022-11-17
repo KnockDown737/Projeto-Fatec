@@ -13,6 +13,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet"> 
+
+        <script src="js/wishilist.js"></script>
         
         <title>Wishlist</title>
     </head>
@@ -30,8 +32,9 @@
         </nav>
     </header>
     <main>
+        <button type="button" id="cadastrarGame">Cadastrar Jogo</button>
         <div>
-            <table id="wishlist">
+            <table id="tableGame">
                 <thead>
                     <tr>
                         <th>JOGO</th>
@@ -40,27 +43,26 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                    </tr>
 
                 </tbody>
             </table>
+            <div>
+                <header>
+                    <h2>Novo Jogo</h2>
+                    <span id="modalClose">&#10006;</span>
+                </header>
+                <form id="form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Jogo" required>
+                    <input type="text" id="preco" class="modal-field" placeholder="Preço" required>
+                    <input type="number" id="lancamento" class="modal-field" placeholder="Ano de Lançamento" required>
+                </form>
+                <footer>
+                    <button id="salvar">Salvar</button>
+                    <button id="cancelar">Cancelar</button>
+                </footer>
+            </div>                
         </div>
-        
     </main>
-
 </body>
+
 </html>
