@@ -264,15 +264,18 @@ b {
 #mainReview{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
+    /* background: transparent; */
+    background: rgba(235, 227, 227, 0.89);
 }
 
 .content-reviews{
-    background:#3716C6;
+    background:#4023c1;
     display: flex;
     padding: 30px;
     border-radius: 6px;
-    gap: 3%;
+    gap: 2%;
+    box-shadow: 2px 2px 2px 1px #4f34c3;
 }
 
 .nota{
@@ -319,7 +322,3 @@ b {
     font-size: 18px;
 }
 
-.btn{
-    margin-top: auto;
-    max-height: auto;
-}
