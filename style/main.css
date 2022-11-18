@@ -40,6 +40,8 @@ header img{
     font-size: 24px;
     display: flex;
     gap: 30px;
+    margin-bottom: 2px;  /* AQUI EU ARRUMEI O PROBLEMA DO NAV DO HOME */
+    
     
 
 }
@@ -94,36 +96,84 @@ margin-left: 40px;
 
 ul li:nth-child(5) {
 
-    margin-left: 40px;
+margin-left: 40px;
     
     }
 
 main{
     max-width: 1098px;
     margin: auto;
-}
-
-main{
     padding: 10px;
     background-color: rgb(242, 242, 242);
-    border-radius: 6px;
-    height: 45cm;
+    border-radius: 2px;
+    height: 32cm; 
+    
+}
+
+section {
+
+
+    max-width: 1098px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    
+    
+
+
+
+
 }
 
 
 
 /* HOME- CARDS*/
 
-.content {
+
+.content_1 {
 
     display:flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 41%;  /* movimentou o card pra esqquerda*/
+    width: 41%;  /* movimentou o card pra esquerda*/
     height: 27vh;
     padding-top: 28%; /*movimenta ele pra cima*/
 }
+
+.content_2 {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;  
+    height: 0vh;
+    padding-top: 0%; 
+
+
+
+}
+
+
+.content_3 {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 160%;  
+    height: 0vh;
+    padding-top: 0%; 
+
+
+
+}
+
+
+
+
+
 
 .card {
 
@@ -131,6 +181,8 @@ main{
     box-shadow: 0px 2px 18px #2639535a;
     border-radius: 20px;
     padding-top: 10px;
+    height: 475px;
+    width: 254px;
 
 }
 
@@ -138,7 +190,7 @@ main{
 
 background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGAVnHnLd3oWgeJSAwKhBXauXgqOl1-_c6A&usqp=CAU) center/cover;
 height: 300px;
-width: 10cm;
+width: auto; /* ISSO DAQUI PERMITE QUE A IMAGEM SE ADAPTE AO TAMANHO DO CARD */
 
 }
 
@@ -153,9 +205,494 @@ width: 10cm;
 
 }
 
+div.bottomCard {
+
+height: 86px;    
+width: 100%;
+
+
+}
+
+/* HOME - TREILERS*/
+
+#treilersTitulo {
+
+
+margin-left: 47%;
+padding-bottom: 1cm;
+
+
+}
+
+
+.treilerDiv {
+
+border: solid #3716C6 transparent;
+
+
+justify-items: center;
+
+top: 30%;
+
+
+/*
+max-width: 1078;
+
+max-height: 216px;
+
+*/
 
 
 
+
+}
+
+
+.treilerImg {
+
+
+padding-left: 22%;
+
+/*    
+max-height: 224px;
+max-width: 390px;
+*/
+
+}
+
+
+
+h4.tituloTreiler {
+
+
+    color: #3716C6;
+    text-shadow: #3716C6;
+    font-size: 2em;
+    padding-top: 7%;
+    padding-bottom: 10%;
+    padding-left: 35%;
+
+
+
+
+}
+
+
+
+
+
+.paragraTreiler {
+
+
+    text-align: center;
+
+
+}
+
+/*////////////////////////////  BOTÃO ////////////////////////////////////////////*/
+
+
+
+    .botao{
+
+        padding-top: 10%;
+        padding-left: 44%;
+     
+
+    }
+
+
+    .btn {
+    
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+    }
+    
+    .btn .play{
+    
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #3716C6;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px #3716C6;
+    transition: 0.5s;
+    }
+    
+    .btn.active .play {
+    
+    box-shadow: 0 0 0 150vh #3716C6;
+    
+    
+    
+    }
+    
+    
+    .btn .play::before {
+    
+    content: '';
+    position: absolute;
+    border: 25px solid #fff ;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 0px solid transparent;
+    transform: translateX(5px);
+    
+    }
+
+
+    
+    
+    .btn p {
+    
+    font-weight: 500;
+    font-size:  1em;
+    color: #888;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    
+    
+    
+    }
+    
+    .clip {
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    
+    
+    }
+    
+    
+    .clip.active {
+    
+    transition-delay: 0.5s;
+    transform:  translate(-50%, -50%) scale(1);
+    
+    
+    }
+    
+    
+    .clip video {
+    
+    max-width: 900px;
+    outline: none;
+    border: 10px solid #fff;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.25);
+    
+    }
+    
+    .clip .close{
+    
+    
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor:  pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#fff;
+    
+    
+    
+    }
+    
+    
+    @media(max-width: 991px) {
+    
+        .clip video {
+    
+            max-width: 900px;
+            
+            }
+    
+    
+    }
+
+    /*BOTÃO 2*/
+
+    .btn2 {
+    
+        position: relative;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        
+        }
+        
+        .btn2 .play{
+        
+        position: relative;
+        width: 80px;
+        height: 80px;
+        background: #3716C6;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 15px 25px #3716C6;
+        transition: 0.5s;
+        }
+        
+        .btn2.active2 .play {
+        
+        box-shadow: 0 0 0 150vh #3716C6;
+        
+        
+        
+        }
+        
+        
+        .btn2 .play::before {
+        
+        content: '';
+        position: absolute;
+        border: 25px solid #fff ;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 0px solid transparent;
+        transform: translateX(5px);
+        
+        }
+    
+    
+        
+        
+        .btn2 p {
+        
+        font-weight: 500;
+        font-size:  1em;
+        color: #888;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        
+        
+        
+        }
+        
+        .clip2 {
+        
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        
+        
+        }
+        
+        
+        .clip2.active2 {
+        
+        transition-delay: 0.5s;
+        transform:  translate(-50%, -50%) scale(1);
+        
+        
+        }
+        
+        
+        .clip2 video2 {
+        
+        max-width: 1px;
+        outline: none;
+        border: 10px solid #fff;
+        box-shadow: 0px 15px 35px rgba(0,0,0,0.25);
+        
+        }
+        
+        .clip2 .close2{
+        
+        
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor:  pointer;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color:#fff;
+        
+        
+        
+        }
+        
+        
+        @media(max-width: 991px) {
+        
+            .clip2 video2 {
+        
+                max-width: 900px;
+                
+                }
+        
+        
+        }
+
+/* BOTÃO 3*/
+
+
+
+.btn3 {
+    
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+    }
+    
+    .btn3 .play{
+    
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #3716C6;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px #3716C6;
+    transition: 0.5s;
+    }
+    
+    .btn3.active3 .play {
+    
+    box-shadow: 0 0 0 150vh #3716C6;
+    
+    
+    
+    }
+    
+    
+    .btn3 .play::before {
+    
+    content: '';
+    position: absolute;
+    border: 25px solid #fff ;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 0px solid transparent;
+    transform: translateX(5px);
+    
+    }
+
+
+    
+    
+    .btn3 p {
+    
+    font-weight: 500;
+    font-size:  1em;
+    color: #888;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    
+    
+    
+    }
+    
+    .clip3 {
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    
+    
+    }
+    
+    
+    .clip3.active3 {
+    
+    transition-delay: 0.5s;
+    transform:  translate(-50%, -50%) scale(1);
+    
+    
+    }
+    
+    
+    .clip3 video3 {
+    
+    max-width: 1px;
+    outline: none;
+    border: 10px solid #fff;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.25);
+    
+    }
+    
+    .clip3 .close3{
+    
+    
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor:  pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#fff;
+    
+    
+    
+    }
+    
+    
+    @media(max-width: 991px) {
+    
+        .clip3 video3 {
+    
+            max-width: 900px;
+            
+            }
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
 
 /*WISHLIST*/
 
