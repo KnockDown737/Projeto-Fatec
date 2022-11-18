@@ -1,3 +1,5 @@
+/*CSS DE USO GERAL DO HTML*/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,37 +15,32 @@ body{
 
 ul{
     list-style: none;
-    padding-top: 20px;
 }
 
 header{
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #fff;
     margin-bottom: 20px;
-    block-size: auto;
-    
 }
 
-header img{
-    padding: 13px;
-}
-
-
-
+header nav{
+    display: flex;
+    align-items: center;
+  }
 
 .menu-nav{
-    
-    margin-right: 7cm;     /* pra mexer em todos os itens do nav*/
-    font-size: 24px;
     display: flex;
     gap: 30px;
-    margin-bottom: 2px;  /* AQUI EU ARRUMEI O PROBLEMA DO NAV DO HOME */
-    
-    
+    align-items: center;
+} 
 
+.menu-nav dl, ol, ul {
+    /*ITENS COMENTADOS AQUI SÃO O PROBLEMA DE ALINHAMENTO DO NAV, margin: auto É NECESSÁRIO PARA AJUSTE*/
+    /* margin-top: 0; */
+    /* margin-bottom: 1rem; */ 
+    margin: auto;
 }
 
 .menu-nav a{
@@ -58,14 +55,10 @@ header img{
     background-color: #3716C6;
     border-radius: 3px;
     transition: .2s;
-    
-    
 }
 
-li {
-
-font-size: 27px;
-
+.menu-nav li {
+    font-size: 20px;
 }
 
 /*mexer nos itens do nav um por um*/
@@ -101,24 +94,23 @@ margin-left: 40px;
     }
 
 main{
-    max-width: 1098px;
+    width: 1080px;
     margin: auto;
     padding: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 2px;
-    height: 32cm; 
-    
+    height: auto;
 }
 
 section {
 
-
-    max-width: 1098px;
+    width: 1080px;
     margin: auto;
     padding: 10px;
     background-color: rgb(242, 242, 242);
-    
-    
+    border-radius: 2px;
+    height: auto;
+    padding-top: 29%;
 
 
 
@@ -127,18 +119,44 @@ section {
 
 
 
-/* HOME- CARDS*/
 
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/* CSS HOME*/
+
+
+#caixaCards {
+
+    padding-top: 33%;
+
+
+}
 
 .content_1 {
+    
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 39%;
+    height: 0vh;
+    padding-top: 0%;
+
+
+
+
+    /*
     display:flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 41%;  /* movimentou o card pra esquerda*/
-    height: 27vh;
-    padding-top: 28%; /*movimenta ele pra cima*/
+    width: 41%;                       /* movimentou o card pra esqquerda*/
+    /*padding-top: 14%;   */               /*movimenta ele pra cima*/
+
+    
 }
 
 .content_2 {
@@ -176,9 +194,9 @@ section {
 
 
 .card {
-
     background: #fff;
     box-shadow: 0px 2px 18px #2639535a;
+    text-align: center;
     border-radius: 20px;
     padding-top: 10px;
     height: 475px;
@@ -194,16 +212,38 @@ width: auto; /* ISSO DAQUI PERMITE QUE A IMAGEM SE ADAPTE AO TAMANHO DO CARD */
 
 }
 
-.topCard {
 
+.mediaCard2 {
+
+    background: url(https://www.heypoorplayer.com/wp-content/uploads/2021/02/dmc-1024x683.jpg) center/cover;
+    height: 300px;
+    width: auto; 
+    
+    }
+
+
+.mediaCard3 {
+
+background: url(https://upload.wikimedia.org/wikipedia/pt/thumb/9/91/Resident_Evil_4_-_North-american_cover.jpg/255px-Resident_Evil_4_-_North-american_cover.jpg) center/cover;
+height: 300px;
+width: auto; 
+        
+        }
+
+.topCard {
     padding: 20px;
+    color: #3716C6;
 }
 
 .bottomCard {
-
     padding: 20px;
-
+    font-size: 17px;
 }
+
+
+
+
+
 
 div.bottomCard {
 
@@ -515,9 +555,9 @@ h4.tituloTreiler {
         }
         
         
-        .clip2 video2 {
+        .clip2 .video2 {
         
-        max-width: 1px;
+        max-width: 900px;
         outline: none;
         border: 10px solid #fff;
         box-shadow: 0px 15px 35px rgba(0,0,0,0.25);
@@ -543,7 +583,7 @@ h4.tituloTreiler {
         
         @media(max-width: 991px) {
         
-            .clip2 video2 {
+            .clip2 .video2 {
         
                 max-width: 900px;
                 
@@ -643,9 +683,9 @@ h4.tituloTreiler {
     }
     
     
-    .clip3 video3 {
+    .clip3 .video3 {
     
-    max-width: 1px;
+    max-width: 900px;
     outline: none;
     border: 10px solid #fff;
     box-shadow: 0px 15px 35px rgba(0,0,0,0.25);
@@ -671,7 +711,7 @@ h4.tituloTreiler {
     
     @media(max-width: 991px) {
     
-        .clip3 video3 {
+        .clip3 .video3 {
     
             max-width: 900px;
             
@@ -696,91 +736,96 @@ h4.tituloTreiler {
 
 /*WISHLIST*/
 
-table{
-    row-gap: 10px;
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS WISHLIST*/
+
+#wishlist{
+    border-collapse: separate;
 }
 
-tr th:first-child{
+#wishlist tr th:first-child{
     padding: 2px 250px 2px 2px;
 }
 
-tr td:first-child{
+#wishlist tr td:first-child{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 10px 500px 10px 10px;
-
     background: #3716C6;
 }
 
-tr td{
+#wishlist tr td:last-child{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#wishlist tr td{
     padding: 10px 70px 10px 10px;
     background: #3716C6;
 }
 
-/*SOBRE*/
+
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS SOBRE*/
 
 b {
     color: #3716C6;
-
 }
 
-
 #fundoIdiota{   /*tive que dar um migué no fundo branco*/
-
     padding: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 6px;
     height: 43cm;   
-
 }
 
-
-
-
 #gwgImage{
-
-padding-top: 4%;
-padding-left: 6%;
-
+    padding-top: 4%;
+    padding-left: 6%;
 }
 
 #Titulo {
-
-color: #3716C6;
-padding-left: 14%;
-padding-top: 19px;
-font-size: 38px;
-
-
-
+    color: #3716C6;
+    padding-left: 14%;
+    padding-top: 19px;
+    font-size: 38px;
 }
-
 
 .Titulos {
-
-color: #3716C6;
-font-size: 33px;
-padding-top: 3%;
+    color: #3716C6;
+    font-size: 33px;
+    padding-top: 3%;
 }
-
-
-
 
 .paragrafo {
-
-padding-top: 3%;
-font-size: 23px;
-text-align: justify;
-
+    padding-top: 3%;
+    font-size: 23px;
+    text-align: justify;
 }
 
-/* FALE CONOSCO */
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS FALE CONOSCO */
 
 .contato {
-    width: 1098px;
+    max-width: 1080px;
     margin: 0 auto;
     font-size: 25px;
-
 }
 
 .formulario {
@@ -805,36 +850,93 @@ text-align: justify;
     overflow: auto;
 }
 
-
 /*aqui tinha dado interferencia com a lista (itens) da navbar*/
-
 /*tentei fazer uma gambi*/
-
-.lista li:nth-child(3) {
-
+/* .lista li:nth-child(3) {
     margin-left: 40px;
-
-
 }
 
 .lista li:nth-child(4) {
-
     margin-left: 40px;
-
-
 }
 
 .lista li:nth-child(5) {
-
     margin-left: 40px;
-
-
-}
+} */
 
 .lista li{
-
-list-style: square;
-margin-left: 40px;
-color: #3716C6;
-
+    list-style: square;
+    margin-left: 40px;
+    color: #3716C6;
 }
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/*CSS REVIEWS*/
+
+#mainReview{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* background: transparent; */
+    background: rgba(235, 227, 227, 0.89);
+}
+
+.content-reviews{
+    background:#4023c1;
+    display: flex;
+    padding: 30px;
+    border-radius: 6px;
+    gap: 2%;
+    box-shadow: 2px 2px 2px 1px #4f34c3;
+}
+
+.nota{
+    display: flex;
+    background: #fff;
+    padding: 1%;
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 6px;
+    font-size: 24px;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-reviews img{
+    width: auto;
+    max-height: 250px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.nome-jogo{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-jogo h2{
+    color: #fff;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 3px ;
+    margin-bottom: auto;
+}
+
+.nome-jogo span{
+    color: aliceblue;
+}
+
+.text-review{
+    color:rgb(242, 242, 242);
+    padding: 1%;
+    font-size: 18px;
+}
+

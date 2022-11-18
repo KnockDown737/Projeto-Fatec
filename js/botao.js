@@ -34,6 +34,7 @@
     close2.onclick = function(){
         btn2.classList.remove('active2');
         clip2.classList.remove('active2')
+        video2.pause();
         /*video2.pause();*/
     }
 
@@ -55,5 +56,5 @@
     close3.onclick = function(){
         btn3.classList.remove('active3');
         clip3.classList.remove('active3')
-        /*video2.pause();*/
+        video3.pause();
     }

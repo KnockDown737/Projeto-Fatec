@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet"> 
-    <title>Reviews</title>
-</head>
-<body>
-    <header>
-        <img src="./imgs/logo.svg" alt="Logo">
-        <nav>
-            <ul class="menu-nav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./wishlist.html">Wishlist</a></li>
-                <li><span>Reviews</span></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./contato.html">Fale Conosco</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div>
-            <span>DIV MAIN</span>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--BootStrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+        <!--Css Próprio-->
+        <link rel="stylesheet" href="style/main.css">
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet"> 
         
-    </main>
-
-</body>
-</html>
+        <title>Reviews</title>
+    </head>
+    <body>
+        <header>
+            <img src="./imgs/logo.svg" alt="Logo">
+            <nav>
+                <ul class="menu-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./wishlist.html">Wishlist</a></li>
+                    <li><span>Reviews</span></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="mainReview">
+            <div class="content-review">
+                
+            </div>
+            
+            
+        </main>
+        <script src="./js/reviews.js"></script>
+        <script>
+            //image,textImg,titleGames,genreGames,textReview
+            document.querySelector("#mainReview").innerHTML =
+            createReview(
+                '7.jpg',
+                'Grounded',
+                'Grounded',
+                'Sobrevivencia, Aventura',
+                'O mundo é um lugar vasto, bonito e perigoso - especialmente quando você está do tamanho de uma formiga. Explore, construa e sobreviva juntos nesta aventura de sobrevivência e cooperação. Você consegue sobreviver ao lado das hordas de insetos gigantes, lutando para sobreviver aos perigos do quintal?'
+            )
+            +createReview(
+                'sonic.png',
+                'Sonic Frontiers',
+                'Sonic Frontiers',
+                'Ação, Exploração',
+                'Onde o ouriço Sonic acaba sendo transportado pra outro mundo onde titãs ameaçam acabar com o plano terrestre'
+                )
+            +createReview(
+                'elden.png',
+                'Elden Ring',
+                'Elden Ring',
+                'Souls like, Exploração',
+                'Elden ring é um souls-like/ exploração onde um cavaleiro acaba partindo em uma missão de destruir os auto lordes e possuir o Elden ring'
+            )    
+            +createReview(
+                'Cod.png',
+                'Call of Duty: Modern Warfare 2',
+                'Call of Duty: Modern Warfare 2',
+                'FPS',
+                'Call of duty modern warfare 2 é um fps onde se passa na era moderna e terroristas ameaçam a segurança da sociedade America'
+            )
+            ;
+        </script>
+    
+    </body>
+    </html>
