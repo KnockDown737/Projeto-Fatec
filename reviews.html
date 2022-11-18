@@ -16,60 +16,38 @@
         
         <title>Reviews</title>
     </head>
-    <body>
-        <header>
-            <img src="./imgs/logo.svg" alt="Logo">
-            <nav>
-                <ul class="menu-nav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./wishlist.html">Wishlist</a></li>
-                    <li><span>Reviews</span></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li><a href="./contato.html">Fale Conosco</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="mainReview">
-            <div class="content-review">
-                
+<body>
+    <header>
+        <img src="./imgs/logo.svg" alt="Logo">
+        <nav>
+            <ul class="menu-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+                <li><span>Reviews</span></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainReview">
+        <form action="" id="addReview">
+            <div id="divRe1">
+              <input type="text" class="input" id="tGame" placeholder="Titulo">
+              <input type="text" class="input" id="gGame" placeholder="Genero">
+              <input type="number" class="input" id="nGame" min="0" max="10" placeholder="nota" >
             </div>
-            
-            
-        </main>
-        <script src="./js/reviews.js"></script>
-        <script>
-            //image,textImg,titleGames,genreGames,textReview
-            document.querySelector("#mainReview").innerHTML =
-            createReview(
-                '7.jpg',
-                'Grounded',
-                'Grounded',
-                'Sobrevivencia, Aventura',
-                'O mundo é um lugar vasto, bonito e perigoso - especialmente quando você está do tamanho de uma formiga. Explore, construa e sobreviva juntos nesta aventura de sobrevivência e cooperação. Você consegue sobreviver ao lado das hordas de insetos gigantes, lutando para sobreviver aos perigos do quintal?'
-            )
-            +createReview(
-                'sonic.png',
-                'Sonic Frontiers',
-                'Sonic Frontiers',
-                'Ação, Exploração',
-                'Onde o ouriço Sonic acaba sendo transportado pra outro mundo onde titãs ameaçam acabar com o plano terrestre'
-                )
-            +createReview(
-                'elden.png',
-                'Elden Ring',
-                'Elden Ring',
-                'Souls like, Exploração',
-                'Elden ring é um souls-like/ exploração onde um cavaleiro acaba partindo em uma missão de destruir os auto lordes e possuir o Elden ring'
-            )    
-            +createReview(
-                'Cod.png',
-                'Call of Duty: Modern Warfare 2',
-                'Call of Duty: Modern Warfare 2',
-                'FPS',
-                'Call of duty modern warfare 2 é um fps onde se passa na era moderna e terroristas ameaçam a segurança da sociedade America'
-            )
-            ;
-        </script>
-    
-    </body>
-    </html>
+            <div id="divRe2">
+            <textarea name="" id="dGame" cols="30" rows="10" placeholder="Review"></textarea>
+            </div>
+            <input type="submit" value="Adicionar" id="botAdd">
+          </form>
+        <div>
+            <ul id="review-content">
+                
+            </ul>
+        </div>
+          
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
