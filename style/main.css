@@ -96,15 +96,10 @@ section {
 
 
 #caixaCards {
-
     padding-top: 33%;
-
-
 }
 
 .content_1 {
-    
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,9 +107,6 @@ section {
     width: 39%;
     height: 0vh;
     padding-top: 0%;
-
-
-
 
     /*
     display:flex;
@@ -124,11 +116,9 @@ section {
     width: 41%;                       /* movimentou o card pra esqquerda*/
     /*padding-top: 14%;   */               /*movimenta ele pra cima*/
 
-    
 }
 
 .content_2 {
-
     display:flex;
     justify-content: center;
     align-items: center;
@@ -136,14 +126,10 @@ section {
     width: 100%;  
     height: 0vh;
     padding-top: 0%; 
-
-
-
 }
 
 
 .content_3 {
-
     display:flex;
     justify-content: center;
     align-items: center;
@@ -151,13 +137,7 @@ section {
     width: 160%;  
     height: 0vh;
     padding-top: 0%; 
-
-
-
 }
-
-
-
 
 
 
@@ -169,34 +149,27 @@ section {
     padding-top: 10px;
     height: 475px;
     width: 254px;
-
 }
 
 .mediaCard {
-
 background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGAVnHnLd3oWgeJSAwKhBXauXgqOl1-_c6A&usqp=CAU) center/cover;
 height: 300px;
 width: auto; /* ISSO DAQUI PERMITE QUE A IMAGEM SE ADAPTE AO TAMANHO DO CARD */
-
 }
 
 
 .mediaCard2 {
-
     background: url(https://www.heypoorplayer.com/wp-content/uploads/2021/02/dmc-1024x683.jpg) center/cover;
     height: 300px;
     width: auto; 
-    
-    }
+}
 
 
 .mediaCard3 {
-
 background: url(https://upload.wikimedia.org/wikipedia/pt/thumb/9/91/Resident_Evil_4_-_North-american_cover.jpg/255px-Resident_Evil_4_-_North-american_cover.jpg) center/cover;
 height: 300px;
-width: auto; 
-        
-        }
+width: auto;         
+}
 
 .topCard {
     padding: 20px;
@@ -209,80 +182,50 @@ width: auto;
 }
 
 
-
-
-
-
 div.bottomCard {
-
 height: 86px;    
 width: 100%;
-
-
 }
+
 
 /* HOME - TREILERS*/
 
 #treilersTitulo {
-
-
 margin-left: 47%;
 padding-bottom: 1cm;
-
-
 }
 
 
 .treilerDiv {
-
 border: solid #3716C6 transparent;
-
-
 justify-items: center;
-
 top: 30%;
-
-
 /*
 max-width: 1078;
 
 max-height: 216px;
 
 */
-
-
-
-
 }
 
 
 .treilerImg {
-
-
 padding-left: 22%;
-
 /*    
 max-height: 224px;
 max-width: 390px;
 */
-
 }
 
 
 
 h4.tituloTreiler {
-
-
     color: #3716C6;
     text-shadow: #3716C6;
     font-size: 2em;
     padding-top: 7%;
     padding-bottom: 10%;
     padding-left: 35%;
-
-
-
-
 }
 
 
@@ -290,16 +233,11 @@ h4.tituloTreiler {
 
 
 .paragraTreiler {
-
-
     text-align: center;
-
-
 }
 
+
 /*////////////////////////////  BOTÃO ////////////////////////////////////////////*/
-
-
 
     .botao{
 
@@ -563,7 +501,6 @@ h4.tituloTreiler {
 /* BOTÃO 3*/
 
 
-
 .btn3 {
     
     position: relative;
@@ -599,7 +536,6 @@ h4.tituloTreiler {
     
     
     .btn3 .play::before {
-    
     content: '';
     position: absolute;
     border: 25px solid #fff ;
@@ -607,26 +543,18 @@ h4.tituloTreiler {
     border-bottom: 15px solid transparent;
     border-right: 0px solid transparent;
     transform: translateX(5px);
-    
     }
-
-
     
     
     .btn3 p {
-    
     font-weight: 500;
     font-size:  1em;
     color: #888;
     letter-spacing: 4px;
     text-transform: uppercase;
-    
-    
-    
     }
     
     .clip3 {
-    
     position: fixed;
     top: 50%;
     left: 50%;
@@ -637,32 +565,23 @@ h4.tituloTreiler {
     justify-content: center;
     align-items: center;
     z-index: 10000;
-    
-    
     }
     
     
     .clip3.active3 {
-    
     transition-delay: 0.5s;
     transform:  translate(-50%, -50%) scale(1);
-    
-    
     }
     
     
     .clip3 .video3 {
-    
     max-width: 900px;
     outline: none;
     border: 10px solid #fff;
     box-shadow: 0px 15px 35px rgba(0,0,0,0.25);
-    
     }
     
     .clip3 .close3{
-    
-    
     position: absolute;
     top: 30px;
     right: 30px;
@@ -671,38 +590,14 @@ h4.tituloTreiler {
     letter-spacing: 2px;
     text-transform: uppercase;
     color:#fff;
-    
-    
-    
     }
     
     
     @media(max-width: 991px) {
-    
         .clip3 .video3 {
-    
             max-width: 900px;
-            
             }
-    
-    
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*/////////////////////////////////////////////////////////////////////////////*/
-
-/*WISHLIST*/
 
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -733,12 +628,6 @@ h4.tituloTreiler {
     padding: 10px 70px 10px 10px;
     background: #3716C6;
 }
-
-
-
-
-
-
 
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -779,68 +668,6 @@ b {
     font-size: 23px;
     text-align: justify;
 }
-
-
-
-
-
-
-
-/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
-/*CSS FALE CONOSCO */
-
-.contato {
-    max-width: 1080px;
-    margin: 0 auto;
-    font-size: 25px;
-}
-
-.formulario {
-    margin: 40px ;
-    color: #3716C6;
- }
-
-.entry-label {
-    display: block;
-    margin: 8px auto;
-    width: 80%;
-}
-
-.entry, .formulario textarea {
-    display: block;
-    margin: 0 auto 25px;
-    padding: 4px 9px;
-    font-size: 18px;
-    width: 80%;
-    box-sizing: border-box;
-    resize: none;
-    overflow: auto;
-}
-
-/*aqui tinha dado interferencia com a lista (itens) da navbar*/
-/*tentei fazer uma gambi*/
-/* .lista li:nth-child(3) {
-    margin-left: 40px;
-}
-
-.lista li:nth-child(4) {
-    margin-left: 40px;
-}
-
-.lista li:nth-child(5) {
-    margin-left: 40px;
-} */
-
-.lista li{
-    list-style: square;
-    margin-left: 40px;
-    color: #3716C6;
-}
-
-
-
-
 
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -945,8 +772,6 @@ b {
     word-break: break-word;
 }
 
-
-  
   #review-content h2{
     font-weight: bold;
     display: contents;
@@ -977,7 +802,6 @@ b {
     border: 0;
     float: right;
   }
-  
 
   #tGame::placeholder,
   #gGame::placeholder,
@@ -987,10 +811,3 @@ b {
     text-align: center;
     text-justify: auto;
 }
-
-
-
-
-
-
-  

@@ -1,0 +1,180 @@
+/* CSS original padrao */
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #3716C6;
+}
+
+ul
+{
+    list-style: none;
+}
+
+header
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+header nav
+{
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+} 
+
+.menu-nav dl, ol, ul 
+{
+    margin: auto;
+}
+
+.menu-nav a
+{
+    font-weight: bold;
+    color: #3716C6;
+    text-decoration: none;
+}
+
+.menu-nav a:hover, .menu-nav span
+{
+    font-weight: bold;
+    color: #fff;
+    background-color: #3716C6;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.menu-nav li 
+{
+    font-size: 20px;
+}
+
+main
+{
+    width: 1080px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 2px;
+    height: auto;
+}
+
+section 
+{
+    width: 1080px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 2px;
+    height: auto;
+    padding-top: 29%;
+}
+
+#fundo
+{   /*migué do fundo branco*/
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 6px;
+    height: 43cm;   
+}
+
+/* ---------------------CSS FORMULÁRIO--------------------------- */
+
+input, textarea 
+{
+    border: 0;
+    outline: 0;
+    font-size: 1.2em;
+    background: transparent;
+    color: #3716C6;
+    position: relative;
+    font-family: 'open_sansregular';
+}
+
+  textarea { resize: none; }
+  .formulario 
+  {
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+  .form
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-item
+  {
+    position: relative;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .form-item .input, .form-item .textarea
+  {
+    display: block;
+    padding: 1em;
+    width: 100%;
+    transition: all 0.3s;
+    border-bottom: 2px solid #3716C6;
+  }
+
+  .form-item .input:focus, .form-item .textarea:focus
+  {
+    border-bottom: 2px solid #a88bee;
+  }
+  
+  .form-item .input:valid + .label, .form-item .input:focus + .label, .form-item .textarea:valid + .label, .form-item .textarea:focus + .label 
+  {
+    top: 1em;
+    left: 1em;
+    font-size: 0.9em;
+  }
+
+  .form-item .label 
+  {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    text-transform: capitalize;
+    transition: all 0.3s;
+  }
+
+  .form-item .botao 
+  {
+    display: block;
+    width:200px;
+    padding: 0.8em 0.6em;
+    border:2px #3716C6 solid;
+    border-radius:10px; 
+    color: #3716C6;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .form-item .botao:hover 
+  {
+    background: #3716C6;
+    color: #ffffff;
+    border:2px #3716C6 solid;
+  }
+  /*Formulário*/
