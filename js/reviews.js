@@ -29,11 +29,13 @@ form.onsubmit = function(event){
   // li.querySelector('.sp2').textContent = value4
 
   const li = ul.innerHTML += `<li>
+  <div id="h2-span">
   <h2>${value1}</h2>
   <span class="sp1">${value2}</span>
+  </div>
   <span class="sp2">${value4}</span>
+  <button class="delete" id="del-btn">X</button>
   <p>${value3}</p>
-  <button class="delete">X</button>
   </li>
   `
 
