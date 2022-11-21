@@ -642,11 +642,11 @@ b {
     padding: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 6px;
-    height: 43cm;   
+      
 }
 
 #gwgImage{
-    padding-top: 4%;
+    margin-top: 20px;
     padding-left: 6%;
 }
 
@@ -658,15 +658,21 @@ b {
 }
 
 .Titulos {
+    margin: 20px;
     color: #3716C6;
     font-size: 33px;
     padding-top: 3%;
 }
 
 .paragrafo {
-    padding-top: 3%;
+    margin: 20px;
     font-size: 23px;
     text-align: justify;
+}
+
+.lista {
+  margin: 20px;
+  list-style: square;
 }
 
 
@@ -698,6 +704,7 @@ b {
 }
 
 #tGame{
+
     width: 60%;
     padding: 15px;
     border-top-left-radius: 12px;
