@@ -650,8 +650,10 @@ b {
 }
 
 #gwgImage{
-    margin-top: 20px;
-    padding-left: 6%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column-reverse;
+    margin: 20px;
 }
 
 #Titulo {
@@ -735,10 +737,6 @@ b {
     font-size: 20px;
     border-style: none;
 
-}
-
-#nGame::content{
-    padding-left: 5px;
 }
 
 #nGame::-webkit-outer-spin-button,
