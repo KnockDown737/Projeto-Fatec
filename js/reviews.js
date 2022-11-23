@@ -6,7 +6,7 @@ const ul = document.querySelector('#review-content')
 form.onsubmit = function(event){
   event.preventDefault()
 
-//Const's criadas para pegaros inputs do formulário e depois transferir o valor para um const para se utilizado
+//Const's criadas para pegar os inputs do formulário e depois transferir o valor para um const para se utilizado
   const titulo = form.querySelector('#tGame')
   const genero = form.querySelector('#gGame')
   const descri = form.querySelector('#dGame')
@@ -17,10 +17,10 @@ form.onsubmit = function(event){
   const value3 = descri.value
   const value4 = nota.value
 
-//Se os values(1,2,3,4) estiverem vazios (sem valor) a função ira return (assim só poderá ser "ativada" se todos os inputs do form estiverem preenchidos)
+  //Se os values(1,2,3,4) estiverem vazios (sem valor) a função fará return (assim só poderá ser "ativada" se todos os inputs do form estiverem preenchidos)
   if(value1 == "" || value2 == "" || value3 == "" || value4 == "" ) return
 
-//Crio uma tag li dentro do ul(lista)
+  //Crio uma tag li dentro do ul(lista)
   const newLi = document.createElement('li')
 
   // ul.appendChild(newLi) Dessa forma o newli aparecia como Last-children
@@ -35,7 +35,6 @@ form.onsubmit = function(event){
   <span class="sp2">${value4}</span>
   <button class="delete" id="del-btn">X</button>
   <p>${value3}</p>
-  
   `
 
 //Limpo o valor(value) dos input's (assim deixo o formulário vazio de novo)
@@ -43,9 +42,7 @@ form.onsubmit = function(event){
   genero.value = ""
   descri.value = ""
   nota.value = ""
-
 }
-
 
 //Botão usado para remover o item(li)
 //Função ativa pelo event click (envento de clicar no no item destinado)
