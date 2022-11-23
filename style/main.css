@@ -68,7 +68,7 @@ header nav{
     font-weight: bold;
     color: var(--color-text-titulo);
     text-decoration: none;
-    padding: 2px;
+    padding: 5px;
 }
 
 .menu-nav a:hover, .menu-nav span{
@@ -715,6 +715,7 @@ b {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     font-size: 20px;
+    border-style: none;
 
 }
 
@@ -722,26 +723,27 @@ b {
     width: 25%;
     padding: 15px;
     font-size: 20px;
+    border-style: none;
 
 }
 
 #nGame{
+    padding: 15px;
     width: 15%;
-    max-height: 60px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     font-size: 20px;
+    border-style: none;
+
 }
 
 #nGame::content{
     padding-left: 5px;
-
 }
 
 #nGame::-webkit-outer-spin-button,
 #nGame::-webkit-inner-spin-button{
     -webkit-appearance: none;
-    -moz-appearance: textfield
 }
 
 #dGame{
@@ -751,7 +753,7 @@ b {
     padding: 10px;
     word-wrap: break-word;
     font-size: 20px;
-
+    border-style: none;
 }
   
 #botAdd{
