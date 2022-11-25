@@ -117,6 +117,8 @@ section {
 
 #caixaCards {
     padding-top: 33%;
+    margin: auto 50px;
+    display: flex;
 }
 
 .content_1 {
@@ -143,8 +145,7 @@ section {
     display:flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    padding-left: 63%;  
+    align-content: center;  
     height: 0vh;
     padding-top: 0%; 
 }
