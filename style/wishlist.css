@@ -1,0 +1,176 @@
+/*CSS DE USO GERAL DO HTML*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-principal);
+    color: var(--color-text-padrao);
+}
+
+:root{
+    --bg-principal: #3716C6;
+    --bg-header:#fff;
+    --color-main: rgb(242, 242, 242);
+    --color-nav: white;
+    --color-text-padrao: black;
+    --color-text-titulo: #3716c6;
+    --color-div-card: #fff;
+    --color-div-title: #3716c6;
+    --color-boxshadow: #151f2d74;
+    --bg-nav: #3716c6;
+    --bg-review:#28157e;
+    --color-border-form: #3716c6;
+}
+
+.darkmode{
+    --bg-principal: black;
+    --bg-header:#2b2b2b;
+    --color-main: #2b2b2b;
+    --color-nav: #fff;
+    --color-text-padrao: #c0c0c0;
+    --color-text-titulo: #f6f6f6;
+    --color-div-card: #2b2b2b;
+    --color-div-title: #fff;
+    --color-boxshadow: #f5f5f55a;
+    --bg-nav: black;
+    --bg-review:#4d4d4d;
+    --color-border-form: black;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--bg-header);
+    margin-bottom: 20px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+} 
+
+dl, ol, ul {
+    /*ITENS COMENTADOS AQUI SÃO O PROBLEMA DE ALINHAMENTO DO NAV, margin: auto É NECESSÁRIO PARA AJUSTE*/
+    /* margin-top: 0; */
+    /* margin-bottom: 1rem; */ 
+    margin: auto;
+}
+
+.menu-nav a{
+    font-weight: bold;
+    color: var(--color-text-titulo);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu-nav a:hover, .menu-nav span{
+    font-weight: bold;
+    color: var(--color-nav);
+    background-color: var(--bg-nav);
+    border-radius: 3px;
+    transition: .2s;
+    padding: 5px;
+}
+
+.menu-nav li {
+    font-size: 20px;
+}
+
+main{
+    width: 1080px;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--color-main);
+    border-radius: 2px;
+    height: auto;
+}
+
+section {
+    width: 1080px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    height: auto;
+    padding-top: 29%;
+}
+
+/*CSS WISHLIST*/
+
+#preco::-webkit-outer-spin-button,
+#preco::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#wishlist {
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding-bottom: 10px;
+}
+
+thead{
+    border-collapse: collapse;
+}
+
+#adicionarWishlist{
+    box-shadow: 0px 5px 10px #1c28b1;
+    background-color: rgb(8, 240, 97);
+    border: none;
+    padding: 2px;
+    border-radius: 12px;
+    color: #2b2b2b;
+    width: 100%;
+}
+
+#adicionarWishlist:hover{
+    background-color: rgb(15, 228, 146);
+}
+
+#adicionarWishlist:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.editar{
+    box-shadow: 0px 5px 10px #1c28b1;
+    background-color: rgb(8, 213, 240);
+    border: none;
+    padding: 2px;
+    border-radius: 12px;
+    color: #2b2b2b;
+}
+
+.editar:hover{
+    background-color: rgb(21, 151, 226);
+}
+
+.excluir{
+    box-shadow: 0px 5px 10px #1c28b1;
+    background-color: rgb(230, 18, 53);
+    border: none;
+    padding: 2px;
+    border-radius: 12px;
+    color: #2b2b2b;
+}
+
+.excluir:hover{
+    background-color: rgb(204, 29, 87);
+}
