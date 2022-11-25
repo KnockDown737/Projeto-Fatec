@@ -33,40 +33,29 @@
             </ul>
         </nav>
     </header>
+   
     <main>
-        <button type="button" id="cadastrarGame">Cadastrar Jogo</button>
-        <div>
-            <table id="tableGame">
-                <thead>
-                    <tr>
-                        <th>JOGO</th>
-                        <th>PREÇO</th>
-                        <th>LANÇAMENTO</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-            <div>
-                <header>
-                    <h2>Novo Jogo</h2>
-                    <span id="modalClose">&#10006;</span>
-                </header>
-                <form id="form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Jogo" required>
-                    <input type="text" id="preco" class="modal-field" placeholder="Preço" required>
-                    <input type="number" id="lancamento" class="modal-field" placeholder="Ano de Lançamento" required>
-                </form>
-                <footer>
-                    <button id="salvar">Salvar</button>
-                    <button id="cancelar">Cancelar</button>
-                </footer>
-            </div>                
-        </div>
-    </main>
-
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+        <table id="wishlist">
+          <thead>
+            <tr>
+              <th>JOGO</th>
+              <th>PREÇO</th>
+              <th>LANÇAMENTO</th>
+            </tr>
+            <tr>
+              <td><input type="text" id="titulo" value="" placeholder="Título"></td>
+              <td><input type="number" id="preco" value="" placeholder="Preço"></td>
+              <td><input type="text" id="lancamento" value="" placeholder="Lançamento"></td>
+              <td><button id="adicionarWishlist" onclick="CreateRow()">Adicionar</button></td>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+  
+      </main>
+  
+      <script src="js/wishilist.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
