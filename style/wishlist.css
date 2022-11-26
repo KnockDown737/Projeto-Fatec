@@ -100,6 +100,7 @@ main{
     background-color: var(--color-main);
     border-radius: 2px;
     height: auto;
+    padding-top: 0px;
 }
 
 section {
@@ -120,57 +121,78 @@ section {
 }
 
 #wishlist {
-    border-collapse: separate;
-    border-spacing: 10px;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 1fr;
 }
 
-thead{
-    border-collapse: collapse;
+thead, tbody, tr{
+    display: contents;
+}
+
+input{
+    width: 90%;
+    margin-bottom: 10px;
 }
 
 #adicionarWishlist{
-    box-shadow: 0px 5px 10px #1c28b1;
+    box-shadow: 0 5px #999;
     background-color: rgb(8, 240, 97);
     border: none;
     padding: 2px;
     border-radius: 12px;
-    color: #2b2b2b;
+    color: #3d3d3d;
     width: 100%;
 }
 
 #adicionarWishlist:hover{
-    background-color: rgb(15, 228, 146);
+    background-color: rgb(25, 214, 151);
 }
 
 #adicionarWishlist:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 0px #666;
     transform: translateY(4px);
 }
 
 .editar{
-    box-shadow: 0px 5px 10px #1c28b1;
+    box-shadow: 0 5px #999;
     background-color: rgb(8, 213, 240);
     border: none;
     padding: 2px;
-    border-radius: 12px;
-    color: #2b2b2b;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #3d3d3d;
+    width: 48%;
 }
 
 .editar:hover{
     background-color: rgb(21, 151, 226);
 }
 
+.editar:active {
+
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
+}
+
 .excluir{
-    box-shadow: 0px 5px 10px #1c28b1;
+    box-shadow: 0 5px #999;
     background-color: rgb(230, 18, 53);
     border: none;
     padding: 2px;
-    border-radius: 12px;
-    color: #2b2b2b;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: #3d3d3d;
+    width: 48%;
+    float: right;
 }
 
 .excluir:hover{
     background-color: rgb(204, 29, 87);
 }
+
+.excluir:active {
+
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
+}
+
