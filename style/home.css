@@ -242,12 +242,14 @@ h4.tituloTreilerF {
 
 .botao{
     padding-top: 10%;
-    padding-left: 46%;
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
     position: relative;
     cursor: pointer;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -335,6 +337,7 @@ h4.tituloTreilerF {
 .btn2 {
     position: relative;
     cursor: pointer;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -422,6 +425,7 @@ h4.tituloTreilerF {
 .btn3 {
     position: relative;
     cursor: pointer;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
