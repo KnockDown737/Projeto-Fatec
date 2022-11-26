@@ -36,25 +36,24 @@
    
     <main>
         <table id="wishlist">
-          <thead>
-            <tr>
-              <th>JOGO</th>
-              <th>PREÇO</th>
-              <th>LANÇAMENTO</th>
-              <th>AÇÃO</th>
-            </tr>
-            <tr>
-              <td><input type="text" id="titulo" value="" placeholder="Título"></td>
-              <td><input type="number" id="preco" value="" placeholder="Preço"></td>
-              <td><input type="date" id="lancamento" value="" placeholder="Lançamento"></td>
-              <td><button id="adicionarWishlist" onclick="CreateRow()">Adicionar</button></td>
-            </tr>
-          </thead>
+            <thead>
+                <tr>
+                <th>JOGO</th>
+                <th>PREÇO</th>
+                <th>LANÇAMENTO</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td><input type="text" id="titulo" value="" placeholder="Título"></td>
+                <td><input type="number" id="preco" value="" placeholder="Preço"></td>
+                <td><input type="date" max="9999-99-99" id="lancamento" value="" placeholder="Lançamento"></td>
+                <td><button id="adicionarWishlist" onclick="CreateRow()">Adicionar</button></td>
+              </tr>
+            </thead>
           <br>
-          <tbody id="corpoTabela">
-          </tbody>
+            <tbody id="corpoTabela">
+            </tbody>
         </table>
-  
       </main>
   
       <script src="js/wishilist.js"></script>
