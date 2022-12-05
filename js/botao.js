@@ -17,7 +17,7 @@
         video.pause();
     }
 
-/*///////////////////////////// BOTÃO 2 /////////////////////////////////*/
+/*///////////////////////////////// BOTÃO 2 /////////////////////////////////*/
 
     const btn2 = document.querySelector('.btn2');
     const clip2 = document.querySelector('.clip2');
