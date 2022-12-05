@@ -1,10 +1,10 @@
     
     /*///////////////////////// BOTAO 1 ///////////////////////////////////*/
     
-    let btn = document.querySelector('.btn');
-    let clip = document.querySelector('.clip');
-    let close = document.querySelector('.close');
-    let video = document.querySelector('Video');
+    const btn = document.querySelector('.btn');
+    const clip = document.querySelector('.clip');
+    const close = document.querySelector('.close');
+    const video = document.querySelector('Video');
     btn.onclick = function() {
         btn.classList.add('active');
         clip.classList.add('active');
