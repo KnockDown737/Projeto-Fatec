@@ -1,12 +1,11 @@
 # Projeto-Fatec
 
-Tema:
+Tema: Site de Jogos
 
-Integrantes:
-<ul>
-    <li>Aline Diniz Martins</li>
-    <li>André Luiz Fonseca Martins</li>
-    <li>Carla Renata da Silva Brito</li>
-    <li>Luan da Silva Costa</li>
-    <li>Lucas Germano Maia</li>
-</ul> 
+## Autores
+
+- [@André](https://www.github.com/KnockDown737)
+- [@Aline](https://github.com/alidiniz)
+- [@Germano](https://github.com/Homertex)
+- [@Renata](https://github.com/Renatinhabrito11)
+- [@Luwn](https://www.github.com/luuwn)

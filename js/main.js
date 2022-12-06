@@ -38,7 +38,7 @@ btnMode.addEventListener("click", (e) => {
   //Irá buscar e retornar o valor do darkModesave no localStorage e irá ativar um função dependendo do valor encontrado.
   darkModesave = localStorage.getItem("dark-mode")
   //Se o valor exatamente igual "desativado" irá ativar a função "ativarDarkMode"
-  if (darkModesave === "desativado"){
+  if (darkModesave === "desativado" || darkModesave === null){
     ativarDarkMode()
   }
   //Se não, irá ativar a função desativarDarkmode, nota-se que nesse caso o valor da variável darkModesave seria "ativado".

@@ -112,6 +112,7 @@ section {
 }
 
 /* ---------------------CSS FORMULÁRIO--------------------------- */
+/*Formatação do título*/
 .formulario .title {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -121,7 +122,7 @@ section {
     margin-bottom: 10px;
     margin-top: 20px;
 }
-
+/*Formatação do quadrado de informações*/
 .formulario input,
 .formulario textarea {
     border: 0;
@@ -133,10 +134,7 @@ section {
     font-family: 'Inter', sans-serif;
 }
 
-.formulario textarea {
-    resize: none;
-}
-
+/*Tamanho do quadrado de informações*/
 .formulario {
     max-width: 550px;
     margin: 0 auto;
@@ -163,11 +161,15 @@ section {
     border-bottom: 2px solid var(--color-border-form);
 }
 
+/*----------------------------------*/
+
+/*Mudança de cor ao clicar no quadrado*/
 .form-item .input:focus,
 .form-item .textarea:focus {
     border-bottom: 2px solid #a88bee;
 }
 
+/*Subir as informações do usuário quando clica no bloco*/
 .form-item .input:valid+.label,
 .form-item .input:focus+.label,
 .form-item .textarea:valid+.label,
@@ -177,6 +179,7 @@ section {
     font-size: 0.9em;
 }
 
+/*Tamanho do bloco*/
 .form-item .label {
     position: absolute;
     top: 2em;
@@ -196,6 +199,7 @@ section {
     transition: all 0.3s;
 }
 
+/*Botão*/
 .form-item .botao:hover {
     background: #3716C6;
     color: #ffffff;
@@ -203,10 +207,5 @@ section {
 }
 
 #bd, #ce {
-
-display: flex;
-
+    display: flex;
 }
-
-
-/* RENATA, TU É UMA RATA*/
